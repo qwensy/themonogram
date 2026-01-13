@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node server/index.js",
-    "build": "echo 'Build completed'"
+    "build": "cd server && npm install"
   },
   "engines": {
     "node": ">=24.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {}
 }
