@@ -3,10 +3,7 @@
   "builds": [
     {
       "src": "server/index.js",
-      "use": "@vercel/node",
-      "config": { 
-        "includeFiles": ["public/**"]
-      }
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -16,10 +13,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/public/$1",
-      "headers": {
-        "Cache-Control": "public, max-age=3600"
-      }
+      "dest": "public/$1"
     }
   ]
 }
