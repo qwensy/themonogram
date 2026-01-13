@@ -17,7 +17,7 @@ async function loadUsers() {
     
     try {
         // Используем ваш серверный API, а не прямое подключение к Supabase
-        const response = await fetch('/users');
+        const response = await fetch('https://themonogram.vercel.app/api/users');
         const result = await response.json();
         
         if (result.success) {
@@ -51,7 +51,8 @@ async function addUser() {
     }
     
     try {
-        const response = await fetch('/users', {
+        // ИСПРАВЛЕННАЯ СТРОКА - добавлена закрывающая скобка
+        const response = await fetch('https://themonogram.vercel.app/api/users', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
