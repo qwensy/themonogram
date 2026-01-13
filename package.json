@@ -1,20 +1,12 @@
 {
   "name": "themonogram",
   "version": "1.0.0",
-  "description": "Monogram project with Node.js and Supabase",
   "scripts": {
-    "start": "cd server && npm start",
-    "build": "cd server && npm install",
-    "dev": "cd server && npm run dev"
+    "start": "node server/index.js",
+    "build": "echo 'Build completed'"
   },
   "engines": {
-    "node": "18.x"
+    "node": ">=24.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/qwensy/themonogram"
-  },
-  "keywords": ["supabase", "nodejs", "express"],
-  "author": "",
-  "license": "MIT"
+  "dependencies": {}
 }
