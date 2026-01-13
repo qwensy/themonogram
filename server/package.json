@@ -1,0 +1,24 @@
+{
+  "name": "monogram-server",
+  "version": "1.0.0",
+  "description": "Node.js server for Monogram project with Supabase",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"No tests yet\" && exit 0",
+    "setup": "node -e \"console.log('Создайте таблицы в Supabase: users и products')\""
+  },
+  "keywords": ["supabase", "nodejs", "express", "monogram"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.7",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
